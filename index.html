@@ -13,9 +13,8 @@
     <meta property="og:description" content="Ph.D. student in Computer Science at Virginia Tech. LLM agents and human-AI interactive systems.">
     <meta property="og:url" content="https://4c79.github.io/">
     <meta name="twitter:card" content="summary">
-    <!-- TODO: 照片放好后取消这两行注释,分享链接时会显示头像 -->
-    <!-- <meta property="og:image" content="https://4c79.github.io/assets/photo.jpg"> -->
-    <!-- <meta name="twitter:image" content="https://4c79.github.io/assets/photo.jpg"> -->
+    <meta property="og:image" content="https://4c79.github.io/assets/photo.jpg">
+    <meta name="twitter:image" content="https://4c79.github.io/assets/photo.jpg">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='78' font-family='Georgia,serif'>Y</text></svg>">
 
@@ -130,14 +129,13 @@
 <h1>Yang Liu</h1>
 
 <div class="card">
-    <!-- TODO: 放一张照片到 assets/photo.jpg (≥300px 宽的方形图),然后取消下面这行的注释 -->
-    <!-- <img src="assets/photo.jpg" alt="Yang Liu"> -->
+    <img src="assets/photo.jpg" alt="Yang Liu">
     <div class="meta">
         Ph.D. Student, Department of Computer Science<br>
         <a href="https://www.vt.edu/">Virginia Tech</a><br>
         yangliu07@vt.edu
         <div class="links">
-            <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a><span>/</span><a href="https://github.com/4C79">GitHub</a><span>/</span><!-- TODO: 把编译好的 CV PDF 放到 assets/cv.pdf --><a href="assets/cv.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a><span>/</span><a href="https://github.com/4C79">GitHub</a><span>/</span><a href="assets/cv.pdf">CV</a>
         </div>
     </div>
 </div>
@@ -152,22 +150,24 @@ Engineering from <a href="https://en.nwafu.edu.cn/">Northwest A&amp;F University
 </p>
 
 <p>
-My research is on LLM agents and human&ndash;AI interactive systems: how agents reconcile conflicting knowledge, and
-how large language models can ground human intent expressed through interaction. I am the author of
-<b>SoG</b>, a training-free sensemaking layer that resolves conflicting facts in agent memory, and
-<b>CriterionSI</b>, an LLM-powered system that infers users' clustering criteria from drag interactions. I also
-work on LLM evaluation and benchmarking. Earlier, I studied deep learning for hyperspectral imaging.
+My research focuses on <b>LLM agents</b> and <b>human&ndash;AI interactive systems</b>: how agents reconcile
+conflicting knowledge, and how large language models can ground human intent expressed through interaction.
+I am broadly interested in visualization, LLM evaluation and benchmarking, and interactive machine learning.
+</p>
+
+<p>
+I am currently <b>looking for research internship opportunities</b>, and I am always open to collaboration
+&mdash; feel free to reach out!
 </p>
 
 <h2 id="news">News</h2>
 
-<!-- TODO: 核对每条的月份,下面是我按推测填的 -->
 <dl class="rows">
     <dt>Jul 2026</dt>
     <dd>SoG, on conflict-aware agent memory, is under submission.</dd>
 
     <dt>Jun 2026</dt>
-    <dd>Two papers accepted to <b>IEEE VIS 2026</b>: CriterionSI (first author, short paper) and Semantic Prompting (full paper).</dd>
+    <dd>Two papers accepted to <b>IEEE VIS 2026</b>: CriterionSI (first author, short paper) and Spatial Visual Analytics for Multi-Document Summary Verification (full paper).</dd>
 
     <dt>May 2026</dt>
     <dd>CTIConnect accepted to <b>KDD 2026</b>, Datasets &amp; Benchmarks Track.</dd>
@@ -181,13 +181,6 @@ work on LLM evaluation and benchmarking. Earlier, I studied deep learning for hy
 <div class="pubs">
 
         <div class="pub">
-            <!-- TODO: 标题/作者按最终投稿版本更新;中了之后把 venue 换成会议名 -->
-            <div class="title">SoG: Conflict-Aware Agent Memory</div>
-            <div class="authors"><b>Yang Liu</b>, et al.</div>
-            <div class="venue"><em>In submission</em>, 2026.</div>
-        </div>
-
-        <div class="pub">
             <div class="title"><a href="https://arxiv.org/abs/2606.28517">Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</a></div>
             <div class="authors"><b>Yang Liu</b>, Xuxin Tang, Jiahao Xu, Chris North</div>
             <div class="venue"><em>IEEE VIS</em> (Short Papers), 2026.</div>
@@ -195,9 +188,8 @@ work on LLM evaluation and benchmarking. Earlier, I studied deep learning for hy
         </div>
 
         <div class="pub">
-            <!-- TODO: camera-ready 出来后核对作者顺序,并补 arXiv 链接 -->
-            <div class="title">Semantic Prompting: Agentic Incremental Narrative Refinement through Spatial Semantic Interaction</div>
-            <div class="authors">Xuxin Tang, Ibrahim Tahmid, <b>Yang Liu</b>, et al., Chris North</div>
+            <div class="title">Spatial Visual Analytics for Multi-Document Summary Verification</div>
+            <div class="authors">Jiahao Xu, Wei Liu, <b>Yang Liu</b>, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, Chris North</div>
             <div class="venue"><em>IEEE VIS</em> (Full Papers), 2026.</div>
         </div>
 
@@ -205,7 +197,6 @@ work on LLM evaluation and benchmarking. Earlier, I studied deep learning for hy
             <div class="title"><a href="https://arxiv.org/abs/2510.11974">CTIConnect: A Benchmark for Retrieval-Augmented LLMs over Heterogeneous Cyber Threat Intelligence</a></div>
             <div class="authors">Yutong Cheng, <b>Yang Liu</b>, Changze Li, Dawn Song, Peng Gao</div>
             <div class="venue"><em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</em> (Datasets &amp; Benchmarks Track), 2026.</div>
-            <!-- 代码仓库在原实验室的 GitHub 组织下,按你的意愿没有链过去;想加就取消下面这行注释 -->
             <div class="tags"><a href="https://arxiv.org/abs/2510.11974">arXiv</a><!-- <a href="https://github.com/peng-gao-lab/CTIArena">code</a> --></div>
         </div>
 
@@ -239,7 +230,6 @@ work on LLM evaluation and benchmarking. Earlier, I studied deep learning for hy
 
 <h2 id="education">Education</h2>
 
-<!-- TODO: 确认预计毕业年份 -->
 <dl class="rows">
     <dt>2025 &ndash; 2030</dt>
     <dd><b>Ph.D. in Computer Science</b>, Virginia Tech <span style="color:var(--muted)">(expected)</span></dd>
