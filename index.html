@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yang Liu</title>
+    <meta name="description" content="Yang Liu — Ph.D. student in Computer Science at Virginia Tech, working on LLM agents and human-AI interactive systems.">
+    <meta name="author" content="Yang Liu">
+
+    <!-- Link previews (LinkedIn, Twitter/X, Slack, iMessage) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Yang Liu">
+    <meta property="og:description" content="Ph.D. student in Computer Science at Virginia Tech. LLM agents and human-AI interactive systems.">
+    <meta property="og:url" content="https://4c79.github.io/">
+    <meta name="twitter:card" content="summary">
+    <!-- TODO: 照片放好后取消这两行注释,分享链接时会显示头像 -->
+    <!-- <meta property="og:image" content="https://4c79.github.io/assets/photo.jpg"> -->
+    <!-- <meta name="twitter:image" content="https://4c79.github.io/assets/photo.jpg"> -->
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='78' font-family='Georgia,serif'>Y</text></svg>">
+
+    <style>
+        :root {
+            --fg: #1a1a1a;
+            --bg: #ffffff;
+            --muted: #6b7280;
+            --link: #0b5fa5;
+            --rule: #e2e2e2;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fg: #e6e6e6;
+                --bg: #16181c;
+                --muted: #9aa0a6;
+                --link: #6fb3ec;
+                --rule: #32363d;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 28px 22px 80px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 16.5px;
+            line-height: 1.65;
+            color: var(--fg);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+
+        nav { font-size: 14.5px; letter-spacing: 0.01em; }
+        nav a { color: var(--muted); }
+        nav a:hover { color: var(--link); }
+        nav span { color: var(--rule); margin: 0 6px; }
+
+        hr { border: 0; border-top: 1px solid var(--rule); margin: 16px 0 26px; }
+
+        h1 { margin: 0 0 18px; font-size: 27px; font-weight: 650; letter-spacing: -0.015em; }
+        h2 {
+            margin: 38px 0 12px;
+            font-size: 13px;
+            font-weight: 650;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            color: var(--muted);
+            scroll-margin-top: 20px;
+        }
+        p { margin: 0 0 13px; }
+
+        /* --- header card --- */
+        .card { display: flex; gap: 22px; align-items: flex-start; flex-wrap: wrap; }
+        .card img { width: 112px; border-radius: 3px; }
+        .card .meta { flex: 1; min-width: 250px; }
+        .links { margin-top: 14px; font-size: 15px; }
+        .links span { color: var(--rule); margin: 0 5px; }
+
+        /* --- news / lists --- */
+        .rows { display: grid; grid-template-columns: 84px 1fr; gap: 4px 16px; }
+        .rows dt { color: var(--muted); font-size: 14.5px; padding-top: 2px; font-variant-numeric: tabular-nums; }
+        .rows dd { margin: 0 0 12px; }
+
+        /* --- publications --- */
+        .pub { margin-bottom: 20px; }
+        .pub .title { font-weight: 600; }
+        .pub .authors { font-size: 15.5px; }
+        .pub .authors b { font-weight: 650; }
+        .pub .venue { font-size: 15px; color: var(--muted); }
+        .pub .venue em { font-style: italic; }
+        .tags { font-size: 13.5px; margin-top: 1px; }
+        .tags a { margin-right: 8px; }
+        .tags a::before { content: "["; color: var(--muted); }
+        .tags a::after  { content: "]"; color: var(--muted); }
+
+        .pubs { padding-left: 100px; }
+
+        @media (max-width: 560px) {
+            body { font-size: 16px; padding: 22px 18px 60px; }
+            .rows { grid-template-columns: 1fr; gap: 0; }
+            .rows dt { padding-top: 8px; }
+            .rows dd { margin-bottom: 10px; }
+            .pubs { padding-left: 0; }
+        }
+
+        @media print {
+            body { max-width: none; font-size: 10.5pt; color: #000; background: #fff; }
+            nav, hr { display: none; }
+            a { color: #000; text-decoration: none; }
+            h2 { margin-top: 20px; }
+            .pub { margin-bottom: 10px; page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#news">News</a><span>/</span><a href="#publications">Publications</a><span>/</span><a href="#education">Education</a><span>/</span><a href="#awards">Awards</a>
+</nav>
+
+<hr>
+
+<h1>Yang Liu</h1>
+
+<div class="card">
+    <!-- TODO: 放一张照片到 assets/photo.jpg (≥300px 宽的方形图),然后取消下面这行的注释 -->
+    <!-- <img src="assets/photo.jpg" alt="Yang Liu"> -->
+    <div class="meta">
+        Ph.D. Student, Department of Computer Science<br>
+        <a href="https://www.vt.edu/">Virginia Tech</a><br>
+        yangliu07@vt.edu
+        <div class="links">
+            <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a><span>/</span><a href="https://github.com/4C79">GitHub</a><span>/</span><!-- TODO: 把编译好的 CV PDF 放到 assets/cv.pdf --><a href="assets/cv.pdf">CV</a>
+        </div>
+    </div>
+</div>
+
+<h2>About</h2>
+
+<p>
+I am a Ph.D. student in the Department of Computer Science at <a href="https://www.vt.edu/">Virginia Tech</a>,
+advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>. Before that, I received an M.S. in
+Software Engineering from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a> and a B.S. in Software
+Engineering from <a href="https://en.nwafu.edu.cn/">Northwest A&amp;F University</a>.
+</p>
+
+<p>
+My research is on LLM agents and human&ndash;AI interactive systems: how agents reconcile conflicting knowledge, and
+how large language models can ground human intent expressed through interaction. I am the author of
+<b>SoG</b>, a training-free sensemaking layer that resolves conflicting facts in agent memory, and
+<b>CriterionSI</b>, an LLM-powered system that infers users' clustering criteria from drag interactions. I also
+work on LLM evaluation and benchmarking. Earlier, I studied deep learning for hyperspectral imaging.
+</p>
+
+<h2 id="news">News</h2>
+
+<!-- TODO: 核对每条的月份,下面是我按推测填的 -->
+<dl class="rows">
+    <dt>Jul 2026</dt>
+    <dd>SoG, on conflict-aware agent memory, is under submission.</dd>
+
+    <dt>Jun 2026</dt>
+    <dd>Two papers accepted to <b>IEEE VIS 2026</b>: CriterionSI (first author, short paper) and Semantic Prompting (full paper).</dd>
+
+    <dt>May 2026</dt>
+    <dd>CTIConnect accepted to <b>KDD 2026</b>, Datasets &amp; Benchmarks Track.</dd>
+
+    <dt>Aug 2025</dt>
+    <dd>Started my Ph.D. in Computer Science at Virginia Tech.</dd>
+</dl>
+
+<h2 id="publications">Publications</h2>
+
+<div class="pubs">
+
+        <div class="pub">
+            <!-- TODO: 标题/作者按最终投稿版本更新;中了之后把 venue 换成会议名 -->
+            <div class="title">SoG: Conflict-Aware Agent Memory</div>
+            <div class="authors"><b>Yang Liu</b>, et al.</div>
+            <div class="venue"><em>In submission</em>, 2026.</div>
+        </div>
+
+        <div class="pub">
+            <div class="title"><a href="https://arxiv.org/abs/2606.28517">Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</a></div>
+            <div class="authors"><b>Yang Liu</b>, Xuxin Tang, Jiahao Xu, Chris North</div>
+            <div class="venue"><em>IEEE VIS</em> (Short Papers), 2026.</div>
+            <div class="tags"><a href="https://arxiv.org/abs/2606.28517">arXiv</a><a href="https://github.com/4C79/CriterionSI">code</a></div>
+        </div>
+
+        <div class="pub">
+            <!-- TODO: camera-ready 出来后核对作者顺序,并补 arXiv 链接 -->
+            <div class="title">Semantic Prompting: Agentic Incremental Narrative Refinement through Spatial Semantic Interaction</div>
+            <div class="authors">Xuxin Tang, Ibrahim Tahmid, <b>Yang Liu</b>, et al., Chris North</div>
+            <div class="venue"><em>IEEE VIS</em> (Full Papers), 2026.</div>
+        </div>
+
+        <div class="pub">
+            <div class="title"><a href="https://arxiv.org/abs/2510.11974">CTIConnect: A Benchmark for Retrieval-Augmented LLMs over Heterogeneous Cyber Threat Intelligence</a></div>
+            <div class="authors">Yutong Cheng, <b>Yang Liu</b>, Changze Li, Dawn Song, Peng Gao</div>
+            <div class="venue"><em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</em> (Datasets &amp; Benchmarks Track), 2026.</div>
+            <!-- 代码仓库在原实验室的 GitHub 组织下,按你的意愿没有链过去;想加就取消下面这行注释 -->
+            <div class="tags"><a href="https://arxiv.org/abs/2510.11974">arXiv</a><!-- <a href="https://github.com/peng-gao-lab/CTIArena">code</a> --></div>
+        </div>
+
+        <div class="pub">
+            <div class="title"><a href="https://arxiv.org/abs/2404.09697">HSIDMamba: Exploring Bidirectional State-Space Models for Hyperspectral Denoising</a></div>
+            <div class="authors"><b>Yang Liu</b>, JiaHua Xiao, Xiang Song, Yu Guo, Peilin Jiang, Haiwei Yang, Fei Wang</div>
+            <div class="venue"><em>CoRR arXiv</em>, 2024.</div>
+            <div class="tags"><a href="https://arxiv.org/abs/2404.09697">arXiv</a><a href="https://github.com/4C79/HSID">code</a></div>
+        </div>
+
+        <div class="pub">
+            <div class="title">Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising</div>
+            <div class="authors">JiaHua Xiao, <b>Yang Liu</b>, Xing Wei</div>
+            <div class="venue"><em>European Conference on Computer Vision (ECCV)</em>, 2024.</div>
+            <div class="tags"><a href="https://github.com/MIV-XJTU/RAS2S">code</a></div>
+        </div>
+
+        <div class="pub">
+            <div class="title">Bridging Fourier and Spatial-Spectral Domains for Hyperspectral Image Denoising</div>
+            <div class="authors">JiaHua Xiao, <b>Yang Liu</b>, Shuhang Zhang, Xing Wei</div>
+            <div class="venue"><em>ACM International Conference on Multimedia (ACM MM)</em>, 2024.</div>
+        </div>
+
+        <div class="pub">
+            <div class="title">Spectral Aggregation Cross-Square Transformer for Hyperspectral Image Denoising</div>
+            <div class="authors"><b>Yang Liu</b>, Yantao Ji, JiaHua Xiao, Yu Guo, Peilin Jiang, Haiwei Yang, Fei Wang</div>
+            <div class="venue"><em>International Conference on Pattern Recognition (ICPR)</em>, 2024.</div>
+        </div>
+
+</div>
+
+<h2 id="education">Education</h2>
+
+<!-- TODO: 确认预计毕业年份 -->
+<dl class="rows">
+    <dt>2025 &ndash; 2030</dt>
+    <dd><b>Ph.D. in Computer Science</b>, Virginia Tech <span style="color:var(--muted)">(expected)</span></dd>
+
+    <dt>2022 &ndash; 2025</dt>
+    <dd><b>M.S. in Software Engineering</b>, Xi'an Jiaotong University</dd>
+
+    <dt>2018 &ndash; 2022</dt>
+    <dd><b>B.S. in Software Engineering</b>, Northwest A&amp;F University</dd>
+</dl>
+
+<h2 id="awards">Awards</h2>
+
+<dl class="rows">
+    <dt>2023, 2024</dt>
+    <dd>National Scholarship of China (top 1%), Xi'an Jiaotong University</dd>
+
+    <dt>2023, 2024</dt>
+    <dd>Outstanding Graduate Student (top 5%), Xi'an Jiaotong University</dd>
+
+    <dt>2023</dt>
+    <dd>First-Class Scholarship, Shenzhen Stock Exchange</dd>
+
+    <dt>2020</dt>
+    <dd>Provincial First Prize, Blue Bridge Cup Programming Competition (C++)</dd>
+</dl>
+
+</body>
+</html>
