@@ -20,9 +20,6 @@
     --link: #6fb0ea;
   }
 
-  .teaser img {
-    filter: brightness(.85);
-  }
 }
 
 html {
@@ -168,8 +165,7 @@ h1 + p + .entries {
   margin: 0 0 24px;
 }
 
-.entry p,
-.entry .teaser {
+.entry p {
   margin: 8px 0 0;
 }
 
@@ -179,11 +175,6 @@ h1 + p + .entries {
   margin-top: 3px;
 }
 
-.teaser img {
-  display: block;
-  width: 100%;
-  border: 1px solid var(--rule);
-}
 
 /* Definition rows on the About page: dates left, text right. */
 

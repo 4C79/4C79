@@ -22,12 +22,11 @@
     <nav aria-label="Primary">
       <ul role="list">
       <li><a href="index.html" aria-current="page">Research</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="service.html">Service</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a></li>
       </ul>
     </nav>
   </header>
@@ -37,8 +36,8 @@
       <img class="photo" src="assets/photo.jpg" alt="Portrait of Yang Liu" width="280" height="420">
       <h1>Yang Liu</h1>
       <p>Ph.D. student, Department of Computer Science, <a href="https://www.vt.edu/">Virginia Tech</a></p>
-      <p class="links"><a href="mailto:yangliu07@vt.edu">yangliu07@vt.edu</a> · <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a> · <a href="https://github.com/4C79">GitHub</a> · <a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a></p>
-      <p>I work on LLM agents and human–AI interactive systems, advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>: how agents reconcile conflicting knowledge in memory, how language models can ground human intent expressed through spatial interaction, and how to benchmark retrieval-augmented LLMs.</p>
+      <p class="links"><a href="mailto:yangliu07@vt.edu">yangliu07@vt.edu</a> · <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a> · <a href="https://github.com/4C79">GitHub</a></p>
+      <p>I work on LLM agents and human–AI interactive systems, advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>: how agents reconcile conflicting knowledge in memory, how language models can ground human intent expressed through spatial interaction, and how to benchmark retrieval-augmented LLMs. A complete record of my education, publications, and awards is in my <a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a>.</p>
     </section>
 
     <section aria-labelledby="recent">
@@ -56,9 +55,6 @@
         <h3>CriterionSI — Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</h3>
         <p class="meta">First author · IEEE VIS 2026, Short Papers</p>
         <p class="authors"><strong>Yang Liu</strong>, Xuxin Tang, Jiahao Xu, Chris North</p>
-        <div class="teaser">
-          <img src="assets/teaser-criterionsi.jpg" alt="CriterionSI pipeline: drag interactions → inferred criterion → value mapping → reprojected layout" width="1400" height="536">
-        </div>
         <p>Users' clustering criterion (e.g., action, location, mood) often emerges gradually through interaction rather than being clear at the outset. CriterionSI (Criterion-guided Semantic Interaction) uses an LLM to infer and refine the user's clustering criterion from sequential drag interactions, grounds it in human feedback rather than fixed priors, and combines the inferred criterion with local drags to guide global reprojection of the image layout. Simulation-based evaluation and a usage scenario show it discovers the target criterion from a small number of interactions and progressively produces criterion-aligned clustering layouts.</p>
         <p class="links"><a href="https://arxiv.org/abs/2606.28517">arXiv</a> · <a href="https://github.com/4C79/CriterionSI">Code</a></p>
       </li>
