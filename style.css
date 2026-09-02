@@ -1,0 +1,598 @@
+/* Yang Liu — personal site.
+   One centered column, system serif for text, a system sans only for the small
+   tracked-caps labels, hairline rules, one accent reserved for links. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #fdfcfa;
+  --fg: #1d1b18;
+  --muted: #6b665e;
+  --accent: #8a2f1c;
+  --focus: #1a5cff;
+  --rule: #e3ded6;
+  --rule-strong: #c4bdb2;
+  --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", "Noto Serif", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 42rem;
+  --gutter: 1.25rem;
+  --label-w: 5.5rem;
+  --s1: .5rem;
+  --s2: 1rem;
+  --s3: 1.75rem;
+  --s4: 3rem;
+  --s5: 4.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151412;
+    --fg: #e7e2d9;
+    --muted: #a09991;
+    --accent: #e69a84;
+    --focus: #7aa2ff;
+    --rule: #2e2b27;
+    --rule-strong: #4c4741;
+  }
+}
+
+/* ---------- base ---------- */
+
+html {
+  font-size: 106.25%; /* 17px */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--serif);
+  line-height: 1.55;
+  font-variant-numeric: oldstyle-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  text-decoration-color: color-mix(in srgb, currentColor 60%, transparent);
+  text-underline-offset: .16em;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+main:focus {
+  outline: none;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: var(--s2);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  left: -100vw;
+  top: var(--s1);
+  padding: var(--s1) .75rem;
+  background: var(--bg);
+  z-index: 1;
+}
+
+.skip:focus {
+  left: var(--s1);
+}
+
+/* Small tracked caps: the one place a sans is used, for texture against the serif. */
+
+.caps,
+.label,
+.meta,
+.section-head h2 {
+  font-family: var(--sans);
+  font-size: max(.76rem, 12px);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* ---------- frame ---------- */
+
+.page {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--s2) var(--gutter) var(--s4);
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.3rem;
+  font-size: .95rem;
+}
+
+.site-nav a {
+  display: inline-block;
+  color: var(--fg);
+  text-decoration: none;
+  padding: .55rem 0 .8rem;
+  margin-bottom: -1px;               /* the current-page bar sits on the rule */
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a[aria-current="page"] {
+  border-bottom-color: var(--fg);
+}
+
+.site-nav .cv a {
+  color: var(--accent);
+}
+
+.site-footer {
+  margin-top: var(--s5);
+  padding-top: var(--s2);
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s1) var(--s2);
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ---------- headings ---------- */
+
+.page-title {
+  padding: var(--s4) 0 var(--s2);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.page-title h1 {
+  font-size: 1.85rem;
+  letter-spacing: -.01em;
+}
+
+.page-title .lede {
+  margin-top: var(--s1);
+  color: var(--muted);
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s1);
+  margin-top: var(--s4);
+  padding-bottom: var(--s1);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.section-head h2 {
+  color: var(--fg);
+}
+
+.section-head .range {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* ---------- identity (home) ---------- */
+
+.identity {
+  padding: var(--s4) 0 var(--s2);
+}
+
+.identity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--s3);
+}
+
+.identity h1 {
+  font-size: 2.2rem;
+  letter-spacing: -.015em;
+}
+
+.identity .role {
+  margin-top: .3rem;
+  color: var(--muted);
+}
+
+.identity .intro {
+  margin-top: var(--s3);
+}
+
+.identity img {
+  flex: none;
+  width: 6rem;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  margin-top: .45rem;
+}
+
+/* inline link lists: “email · Scholar · GitHub” */
+
+.links {
+  list-style: none;
+  margin: var(--s2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 0;
+  font-size: .92rem;
+}
+
+.links li {
+  white-space: nowrap;
+}
+
+.links a {
+  display: inline-block;
+  padding: .3rem 0;                  /* comfortable tap target without changing the rhythm */
+  margin: -.3rem 0;
+}
+
+.links li + li::before {
+  content: "·";
+  content: "·" / "";                 /* decorative: not announced by screen readers; leads the next item so it never ends a line */
+  color: var(--muted);
+  margin: 0 .6rem;
+}
+
+/* ---------- entries: research, publications, projects, teaching ---------- */
+
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry {
+  position: relative;
+  padding: var(--s3) 0;
+}
+
+.entry + .entry {
+  border-top: 1px solid var(--rule);
+}
+
+.label {
+  display: block;
+  color: var(--muted);
+  margin-bottom: .5rem;
+}
+
+.entry h2,
+.entry h3 {
+  font-size: 1.22rem;
+}
+
+.entry .sub {
+  display: block;
+  font-size: 1rem;
+  color: var(--muted);
+  margin-top: .15rem;
+}
+
+.meta {
+  margin-top: .45rem;
+  color: var(--muted);
+}
+
+.authors {
+  margin-top: .4rem;
+  font-size: .95rem;
+  color: var(--muted);
+}
+
+.authors strong {
+  color: var(--fg);
+}
+
+.entry .summary {
+  margin-top: .8rem;
+}
+
+.entry .links,
+.entry .stub {
+  margin-top: .7rem;
+}
+
+.entry .stub {
+  font-size: .92rem;
+  color: var(--muted);
+}
+
+.teaser {
+  margin: var(--s2) 0 0;
+}
+
+.teaser a {
+  display: block;
+}
+
+.teaser img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--rule-strong);
+}
+
+@media (prefers-color-scheme: dark) {
+  .teaser img {
+    filter: brightness(.85) contrast(1.02); /* the white figure sits into the dark page */
+  }
+}
+
+/* compact variant used on the publications page */
+
+.entry.compact {
+  padding: var(--s2) 0;
+}
+
+.entry.compact h3 {
+  font-size: 1.05rem;
+}
+
+.entry.compact .venue {
+  margin-top: .3rem;
+  font-size: .95rem;
+}
+
+.entry.compact .links {
+  margin-top: .4rem;
+}
+
+/* year groups: the year heads the group; the first entry sits flush under it */
+
+.year-group {
+  position: relative;
+  padding-top: var(--s2);
+}
+
+.year-group .entry:first-child {
+  padding-top: 0;
+}
+
+.page-title + .year-group {
+  padding-top: var(--s3);            /* first item starts the same distance below the title rule on every page */
+}
+
+.year-group + .year-group {
+  margin-top: var(--s3);
+  border-top: 1px solid var(--rule-strong);
+}
+
+.note {
+  margin-top: var(--s3);
+  padding-top: var(--s2);
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.note .caps {
+  margin-right: .75rem;
+}
+
+.note.interests {
+  margin-top: var(--s2);
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* ---------- rows: education, honors, skills (about) ---------- */
+
+.rows {
+  margin: var(--s2) 0 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: .5rem var(--s3);
+}
+
+.rows dt {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.rows dd {
+  margin: 0;
+}
+
+.prose {
+  margin-top: var(--s2);
+}
+
+/* ---------- responsive ---------- */
+
+@media (min-width: 40em) {
+  .site-nav .cv {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 40em) {
+  /* Let the seven items wrap onto two rows; each keeps a ~44px tap height. */
+  .site-nav ul {
+    gap: 0 1.1rem;
+    padding-bottom: .15rem;
+  }
+
+  .site-nav a {
+    padding: .65rem 0 .5rem;
+    margin-bottom: 0;                /* bar sits under the word, not on the rule */
+    white-space: nowrap;
+  }
+
+  .site-nav .cv {
+    margin-left: auto;               /* CV stays flush right on whichever row it lands */
+  }
+
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 100%;
+  }
+
+  .identity {
+    padding-top: var(--s3);
+  }
+
+  .identity-row {
+    gap: var(--s2);
+  }
+
+  .identity h1 {
+    font-size: 1.85rem;
+  }
+
+  .identity img {
+    width: 5rem;
+  }
+
+  .identity .intro {
+    margin-top: var(--s2);
+  }
+
+  .rows {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .rows dt {
+    white-space: normal;
+    font-size: .85rem;
+    margin-top: var(--s2);
+  }
+
+  .rows dt:first-of-type {
+    margin-top: 0;
+  }
+}
+
+/* Hang labels (entry numbers, years, dates) into the left margin when there is room.
+   With top/bottom left auto, an absolutely positioned label keeps its static position,
+   so it lines up with the title beneath it whatever the entry padding is. */
+
+@media (min-width: 64em) {
+  .label {
+    position: absolute;
+    right: 100%;
+    width: var(--label-w);
+    margin: .3rem var(--gutter) 0 0;
+    text-align: right;
+  }
+
+  .year-group > .label {
+    margin-top: .2rem;
+  }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --fg: #000;
+    --muted: #444;
+    --rule: #bbb;
+    --rule-strong: #888;
+    --accent: #000;
+  }
+
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .skip,
+  .site-nav {
+    display: none;
+  }
+
+  .label {
+    position: static;
+    margin: 0 0 .3rem;
+    text-align: left;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .links a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: .8em;
+  }
+
+  .teaser a {
+    text-decoration: none;
+  }
+
+  .entry,
+  .year-group {
+    break-inside: avoid;
+  }
+}

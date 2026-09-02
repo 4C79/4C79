@@ -1,241 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yang Liu</title>
-    <meta name="description" content="Yang Liu — Ph.D. student in Computer Science at Virginia Tech, working on LLM agents and human-AI interactive systems.">
-    <meta name="author" content="Yang Liu">
-
-    <!-- Link previews (LinkedIn, Twitter/X, Slack, iMessage) -->
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="Yang Liu">
-    <meta property="og:description" content="Ph.D. student in Computer Science at Virginia Tech. LLM agents and human-AI interactive systems.">
-    <meta property="og:url" content="https://4c79.github.io/">
-    <meta name="twitter:card" content="summary">
-    <meta property="og:image" content="https://4c79.github.io/assets/photo.jpg">
-    <meta name="twitter:image" content="https://4c79.github.io/assets/photo.jpg">
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='78' font-family='Georgia,serif'>Y</text></svg>">
-
-    <style>
-        :root {
-            --fg: #1a1a1a;
-            --bg: #ffffff;
-            --muted: #6b7280;
-            --link: #0b5fa5;
-            --rule: #e2e2e2;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --fg: #e6e6e6;
-                --bg: #16181c;
-                --muted: #9aa0a6;
-                --link: #6fb3ec;
-                --rule: #32363d;
-            }
-        }
-
-        * { box-sizing: border-box; }
-
-        html { scroll-behavior: smooth; }
-
-        body {
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 28px 22px 80px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            font-size: 16.5px;
-            line-height: 1.65;
-            color: var(--fg);
-            background: var(--bg);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a { color: var(--link); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
-
-        nav { font-size: 14.5px; letter-spacing: 0.01em; }
-        nav a { color: var(--muted); }
-        nav a:hover { color: var(--link); }
-        nav span { color: var(--rule); margin: 0 6px; }
-
-        hr { border: 0; border-top: 1px solid var(--rule); margin: 16px 0 26px; }
-
-        h1 { margin: 0 0 18px; font-size: 27px; font-weight: 650; letter-spacing: -0.015em; }
-        h2 {
-            margin: 38px 0 12px;
-            font-size: 13px;
-            font-weight: 650;
-            text-transform: uppercase;
-            letter-spacing: 0.09em;
-            color: var(--muted);
-            scroll-margin-top: 20px;
-        }
-        p { margin: 0 0 13px; }
-
-        /* --- header card --- */
-        .card { display: flex; gap: 22px; align-items: flex-start; flex-wrap: wrap; }
-        .card img { width: 112px; border-radius: 3px; }
-        .card .meta { flex: 1; min-width: 250px; }
-        .links { margin-top: 14px; font-size: 15px; }
-        .links span { color: var(--rule); margin: 0 5px; }
-
-        /* --- news / lists --- */
-        .rows { display: grid; grid-template-columns: 84px 1fr; gap: 4px 16px; }
-        .rows dt { color: var(--muted); font-size: 14.5px; padding-top: 2px; font-variant-numeric: tabular-nums; }
-        .rows dd { margin: 0 0 12px; }
-
-        /* --- publications --- */
-        .pub { margin-bottom: 20px; }
-        .pub .title { font-weight: 600; }
-        .pub .authors { font-size: 15.5px; }
-        .pub .authors b { font-weight: 650; }
-        .pub .venue { font-size: 15px; color: var(--muted); }
-        .pub .venue em { font-style: italic; }
-        .tags { font-size: 13.5px; margin-top: 1px; }
-        .tags a { margin-right: 8px; }
-        .tags a::before { content: "["; color: var(--muted); }
-        .tags a::after  { content: "]"; color: var(--muted); }
-
-        .pubs { padding-left: 100px; }
-
-        @media (max-width: 560px) {
-            body { font-size: 16px; padding: 22px 18px 60px; }
-            .rows { grid-template-columns: 1fr; gap: 0; }
-            .rows dt { padding-top: 8px; }
-            .rows dd { margin-bottom: 10px; }
-            .pubs { padding-left: 0; }
-        }
-
-        @media print {
-            body { max-width: none; font-size: 10.5pt; color: #000; background: #fff; }
-            nav, hr { display: none; }
-            a { color: #000; text-decoration: none; }
-            h2 { margin-top: 20px; }
-            .pub { margin-bottom: 10px; page-break-inside: avoid; }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yang Liu</title>
+  <meta name="description" content="Yang Liu is a Ph.D. student in Computer Science at Virginia Tech working on LLM agents and human–AI interactive systems. Recent research, 2025–2026.">
+  <meta name="theme-color" content="#fdfcfa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yang Liu">
+  <meta property="og:description" content="Yang Liu is a Ph.D. student in Computer Science at Virginia Tech working on LLM agents and human–AI interactive systems. Recent research, 2025–2026.">
+  <meta property="og:image" content="https://4c79.github.io/4C79/assets/photo.jpg">
+  <meta property="og:url" content="https://4c79.github.io/4C79/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%238a2f1c'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='21' fill='%23fdfcfa'%3EY%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+  <header>
+    <nav class="site-nav" aria-label="Primary">
+      <ul role="list">
+      <li><a href="index.html" aria-current="page">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="cv"><a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav>
-    <a href="#publications">Publications</a><span>/</span><a href="#education">Education</a><span>/</span><a href="#awards">Awards</a>
-</nav>
-
-<hr>
-
-<h1>Yang Liu</h1>
-
-<div class="card">
-    <img src="assets/photo.jpg" alt="Yang Liu">
-    <div class="meta">
-        Ph.D. Student, Department of Computer Science<br>
-        <a href="https://www.vt.edu/">Virginia Tech</a><br>
-        yangliu07@vt.edu
-        <div class="links">
-            <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a><span>/</span><a href="https://github.com/4C79">GitHub</a><span>/</span><a href="assets/cv.pdf">CV</a>
+  <main id="main" tabindex="-1">
+    <section class="identity" aria-label="Introduction">
+      <div class="identity-row">
+        <div>
+          <h1>Yang Liu</h1>
+          <p class="role">Ph.D. student, Department of Computer Science, <a href="https://www.vt.edu/">Virginia Tech</a></p>
+          <ul class="links" role="list">
+            <li><a href="mailto:yangliu07@vt.edu">yangliu07@vt.edu</a></li>
+            <li><a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a></li>
+            <li><a href="https://github.com/4C79">GitHub</a></li>
+          </ul>
         </div>
-    </div>
-</div>
+        <img src="assets/photo.jpg" alt="Portrait of Yang Liu" width="280" height="420">
+      </div>
+      <p class="intro">I work on LLM agents and human–AI interactive systems, advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>: how agents reconcile conflicting knowledge in memory, how language models can ground human intent expressed through spatial interaction, and how to benchmark retrieval-augmented LLMs.</p>
+    </section>
 
-<h2>About</h2>
+    <section aria-labelledby="recent">
+      <div class="section-head">
+        <h2 id="recent">Recent research</h2>
+        <span class="range">2025–2026</span>
+      </div>
 
-<p>
-I am a Ph.D. student in the Department of Computer Science at <a href="https://www.vt.edu/">Virginia Tech</a>,
-advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>. Before that, I received an M.S. in
-Software Engineering from <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a> and a B.S. in Software
-Engineering from <a href="https://en.nwafu.edu.cn/">Northwest A&amp;F University</a>.
-</p>
+      <ol class="entries" role="list">
+        <li class="entry">
+          <span class="label">No. 1</span>
+          <h3>Conflict-Aware Agent Memory</h3>
+          <p class="meta">First author · In submission, 2026</p>
+          <p class="summary">A training-free sensemaking layer for LLM agent memory that resolves conflicting facts. It organizes memories into provenance-aware claim graphs and applies a gated resolution ladder (temporal recency, source reliability, LLM-judge audit) so the agent answers from a consistent view of what it knows. Evaluated on fact-consolidation, conflicting-document, and temporal-knowledge benchmarks across multiple open and commercial backbones.</p>
+          <p class="stub">Paper under review.</p>
+        </li>
 
-<p>
-Currently, I am working on <b>LLM agents</b> and <b>human&ndash;AI interactive systems</b>: how agents reconcile
-conflicting knowledge, and how large language models can ground human intent expressed through interaction.
-Previously, my research focused on deep learning for hyperspectral imaging.
-</p>
+        <li class="entry">
+          <span class="label">No. 2</span>
+          <h3>CriterionSI</h3>
+          <p class="sub">Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</p>
+          <p class="meta">First author · IEEE VIS 2026, Short Papers</p>
+          <p class="authors"><strong>Yang Liu</strong>, Xuxin Tang, Jiahao Xu, Chris North</p>
+          <figure class="teaser">
+            <a href="assets/teaser-criterionsi.jpg"><img src="assets/teaser-criterionsi.jpg" alt="CriterionSI pipeline: drag interactions → inferred criterion → value mapping → reprojected layout" width="1400" height="536"></a>
+          </figure>
+          <p class="summary">Users' clustering criterion (e.g., action, location, mood) often emerges gradually through interaction rather than being clear at the outset. CriterionSI (Criterion-guided Semantic Interaction) uses an LLM to infer and refine the user's clustering criterion from sequential drag interactions, grounds it in human feedback rather than fixed priors, and combines the inferred criterion with local drags to guide global reprojection of the image layout. Simulation-based evaluation and a usage scenario show it discovers the target criterion from a small number of interactions and progressively produces criterion-aligned clustering layouts.</p>
+          <ul class="links" role="list">
+            <li><a href="https://arxiv.org/abs/2606.28517">arXiv</a></li>
+            <li><a href="https://github.com/4C79/CriterionSI">Code</a></li>
+          </ul>
+        </li>
 
+        <li class="entry">
+          <span class="label">No. 3</span>
+          <h3>Summary Verification Space</h3>
+          <p class="sub">Spatial Visual Analytics for Multi-Document Summary Verification</p>
+          <p class="meta">Co-author · IEEE VIS 2026, Full Papers</p>
+          <p class="authors">Jiahao Xu, Wei Liu, <strong>Yang Liu</strong>, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, Chris North</p>
+          <p class="summary">LLMs increasingly summarize collections of documents, but checking whether each summary statement is grounded in the sources is hard when evidence is scattered, incomplete, or conflicting. SVS is a visual analytics system for verifying multi-document summaries through spatial document organization and coordinated provenance visualization, investigating summary-guided and source-guided 2-D canvas layouts for scalable verification.</p>
+          <ul class="links" role="list">
+            <li><a href="https://arxiv.org/abs/2607.28853">arXiv</a></li>
+          </ul>
+        </li>
 
-<h2 id="publications">Publications</h2>
+        <li class="entry">
+          <span class="label">No. 4</span>
+          <h3>CTIConnect</h3>
+          <p class="sub">A Benchmark for Retrieval-Augmented LLMs over Heterogeneous Cyber Threat Intelligence</p>
+          <p class="meta">Second author · KDD 2026, Datasets &amp; Benchmarks Track</p>
+          <p class="authors">Yutong Cheng, <strong>Yang Liu</strong>, Changze Li, Dawn Song, Peng Gao</p>
+          <p class="summary">A benchmark for evaluating retrieval-augmented LLMs across the cyber threat intelligence task landscape: 1,860 expert-verified QA pairs over nine tasks, built on a unified environment that integrates five heterogeneous CTI sources (CVE, CWE, CAPEC, MITRE ATT&amp;CK, and unstructured threat reports). Experiments on ten state-of-the-art LLMs show that the retrieval bottleneck shifts by task and that domain-specific retrieval strategies outperform generic retrieve-then-rerank and IRCoT.</p>
+          <ul class="links" role="list">
+            <li><a href="https://arxiv.org/abs/2510.11974">arXiv</a></li>
+          </ul>
+        </li>
+      </ol>
 
-<div class="pubs">
+      <p class="note">Earlier work (2022–2024) is listed under <a href="projects.html">Projects</a>; the full list of papers is under <a href="publications.html">Publications</a>.</p>
+    </section>
+  </main>
 
-        <div class="pub">
-            <div class="title"><a href="https://arxiv.org/abs/2606.28517">Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</a></div>
-            <div class="authors"><b>Yang Liu</b>, Xuxin Tang, Jiahao Xu, Chris North</div>
-            <div class="venue"><em>IEEE VIS</em> (Short Papers), 2026.</div>
-            <div class="tags"><a href="https://arxiv.org/abs/2606.28517">arXiv</a><a href="https://github.com/4C79/CriterionSI">code</a></div>
-        </div>
-
-        <div class="pub">
-            <div class="title">Spatial Visual Analytics for Multi-Document Summary Verification</div>
-            <div class="authors">Jiahao Xu, Wei Liu, <b>Yang Liu</b>, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, Chris North</div>
-            <div class="venue"><em>IEEE VIS</em> (Full Papers), 2026.</div>
-        </div>
-
-        <div class="pub">
-            <div class="title"><a href="https://arxiv.org/abs/2510.11974">CTIConnect: A Benchmark for Retrieval-Augmented LLMs over Heterogeneous Cyber Threat Intelligence</a></div>
-            <div class="authors">Yutong Cheng, <b>Yang Liu</b>, Changze Li, Dawn Song, Peng Gao</div>
-            <div class="venue"><em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</em> (Datasets &amp; Benchmarks Track), 2026.</div>
-            <div class="tags"><a href="https://arxiv.org/abs/2510.11974">arXiv</a><!-- <a href="https://github.com/peng-gao-lab/CTIArena">code</a> --></div>
-        </div>
-
-        <div class="pub">
-            <div class="title"><a href="https://arxiv.org/abs/2404.09697">HSIDMamba: Exploring Bidirectional State-Space Models for Hyperspectral Denoising</a></div>
-            <div class="authors"><b>Yang Liu</b>, JiaHua Xiao, Xiang Song, Yu Guo, Peilin Jiang, Haiwei Yang, Fei Wang</div>
-            <div class="venue"><em>CoRR arXiv</em>, 2024.</div>
-            <div class="tags"><a href="https://arxiv.org/abs/2404.09697">arXiv</a><a href="https://github.com/4C79/HSID">code</a></div>
-        </div>
-
-        <div class="pub">
-            <div class="title">Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising</div>
-            <div class="authors">JiaHua Xiao, <b>Yang Liu</b>, Xing Wei</div>
-            <div class="venue"><em>European Conference on Computer Vision (ECCV)</em>, 2024.</div>
-            <div class="tags"><a href="https://github.com/MIV-XJTU/RAS2S">code</a></div>
-        </div>
-
-        <div class="pub">
-            <div class="title">Bridging Fourier and Spatial-Spectral Domains for Hyperspectral Image Denoising</div>
-            <div class="authors">JiaHua Xiao, <b>Yang Liu</b>, Shuhang Zhang, Xing Wei</div>
-            <div class="venue"><em>ACM International Conference on Multimedia (ACM MM)</em>, 2024.</div>
-        </div>
-
-        <div class="pub">
-            <div class="title">Spectral Aggregation Cross-Square Transformer for Hyperspectral Image Denoising</div>
-            <div class="authors"><b>Yang Liu</b>, Yantao Ji, JiaHua Xiao, Yu Guo, Peilin Jiang, Haiwei Yang, Fei Wang</div>
-            <div class="venue"><em>International Conference on Pattern Recognition (ICPR)</em>, 2024.</div>
-        </div>
-
-</div>
-
-<h2 id="education">Education</h2>
-
-<dl class="rows">
-    <dt>2025 &ndash; 2030</dt>
-    <dd><b>Ph.D. in Computer Science</b>, Virginia Tech <span style="color:var(--muted)">(expected)</span></dd>
-
-    <dt>2022 &ndash; 2025</dt>
-    <dd><b>M.S. in Software Engineering</b>, Xi'an Jiaotong University</dd>
-
-    <dt>2018 &ndash; 2022</dt>
-    <dd><b>B.S. in Software Engineering</b>, Northwest A&amp;F University</dd>
-</dl>
-
-<h2 id="awards">Awards</h2>
-
-<dl class="rows">
-    <dt>2023, 2024</dt>
-    <dd>National Scholarship of China (top 1%), Xi'an Jiaotong University</dd>
-
-    <dt>2023, 2024</dt>
-    <dd>Outstanding Graduate Student (top 5%), Xi'an Jiaotong University</dd>
-
-    <dt>2023</dt>
-    <dd>First-Class Scholarship, Shenzhen Stock Exchange</dd>
-
-    <dt>2020</dt>
-    <dd>Provincial First Prize, Blue Bridge Cup Programming Competition (C++)</dd>
-</dl>
-
+  <footer class="site-footer">
+    <p>© 2026 Yang Liu</p>
+    <p>Last updated September 2026</p>
+  </footer>
+  </div>
+  <script>(function(){var a=document.querySelector('.site-nav [aria-current]');if(a&&a.scrollIntoView)a.scrollIntoView({block:'nearest',inline:'nearest'});})();</script>
 </body>
 </html>
