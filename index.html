@@ -5,22 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yang Liu</title>
   <meta name="description" content="Yang Liu is a Ph.D. student in Computer Science at Virginia Tech working on LLM agents and human–AI interactive systems. Recent research, 2025–2026.">
-  <meta name="theme-color" content="#fdfcfa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Yang Liu">
   <meta property="og:description" content="Yang Liu is a Ph.D. student in Computer Science at Virginia Tech working on LLM agents and human–AI interactive systems. Recent research, 2025–2026.">
   <meta property="og:image" content="https://4c79.github.io/4C79/assets/photo.jpg">
   <meta property="og:url" content="https://4c79.github.io/4C79/">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%238a2f1c'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='21' fill='%23fdfcfa'%3EY%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b5fa5'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='20' fill='%23fff'%3EY%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="page">
   <header>
-    <nav class="site-nav" aria-label="Primary">
+    <nav aria-label="Primary">
       <ul role="list">
       <li><a href="index.html" aria-current="page">Research</a></li>
       <li><a href="publications.html">Publications</a></li>
@@ -28,93 +27,65 @@
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="service.html">Service</a></li>
       <li><a href="about.html">About</a></li>
-      <li class="cv"><a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a></li>
+      <li><a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="identity" aria-label="Introduction">
-      <div class="identity-row">
-        <div>
-          <h1>Yang Liu</h1>
-          <p class="role">Ph.D. student, Department of Computer Science, <a href="https://www.vt.edu/">Virginia Tech</a></p>
-          <ul class="links" role="list">
-            <li><a href="mailto:yangliu07@vt.edu">yangliu07@vt.edu</a></li>
-            <li><a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a></li>
-            <li><a href="https://github.com/4C79">GitHub</a></li>
-          </ul>
-        </div>
-        <img src="assets/photo.jpg" alt="Portrait of Yang Liu" width="280" height="420">
-      </div>
-      <p class="intro">I work on LLM agents and human–AI interactive systems, advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>: how agents reconcile conflicting knowledge in memory, how language models can ground human intent expressed through spatial interaction, and how to benchmark retrieval-augmented LLMs.</p>
+    <section class="head" aria-label="Introduction">
+      <img class="photo" src="assets/photo.jpg" alt="Portrait of Yang Liu" width="280" height="420">
+      <h1>Yang Liu</h1>
+      <p>Ph.D. student, Department of Computer Science, <a href="https://www.vt.edu/">Virginia Tech</a></p>
+      <p class="links"><a href="mailto:yangliu07@vt.edu">yangliu07@vt.edu</a> · <a href="https://scholar.google.com/citations?user=cbDQeWQAAAAJ&hl=en">Google Scholar</a> · <a href="https://github.com/4C79">GitHub</a> · <a href="assets/cv.pdf">CV<span class="sr-only"> (PDF)</span></a></p>
+      <p>I work on LLM agents and human–AI interactive systems, advised by <a href="https://people.cs.vt.edu/north/">Prof. Chris North</a>: how agents reconcile conflicting knowledge in memory, how language models can ground human intent expressed through spatial interaction, and how to benchmark retrieval-augmented LLMs.</p>
     </section>
 
     <section aria-labelledby="recent">
-      <div class="section-head">
-        <h2 id="recent">Recent research</h2>
-        <span class="range">2025–2026</span>
-      </div>
+      <h2 id="recent">Recent research (2025–2026)</h2>
 
-      <ol class="entries" role="list">
-        <li class="entry">
-          <span class="label">No. 1</span>
-          <h3>Conflict-Aware Agent Memory</h3>
-          <p class="meta">First author · In submission, 2026</p>
-          <p class="summary">A training-free sensemaking layer for LLM agent memory that resolves conflicting facts. It organizes memories into provenance-aware claim graphs and applies a gated resolution ladder (temporal recency, source reliability, LLM-judge audit) so the agent answers from a consistent view of what it knows. Evaluated on fact-consolidation, conflicting-document, and temporal-knowledge benchmarks across multiple open and commercial backbones.</p>
-          <p class="stub">Paper under review.</p>
-        </li>
+      <ul class="entries" role="list">
+      <li class="entry">
+        <h3>Conflict-Aware Agent Memory</h3>
+        <p class="meta">First author · In submission, 2026</p>
+        <p>A training-free sensemaking layer for LLM agent memory that resolves conflicting facts. It organizes memories into provenance-aware claim graphs and applies a gated resolution ladder (temporal recency, source reliability, LLM-judge audit) so the agent answers from a consistent view of what it knows. Evaluated on fact-consolidation, conflicting-document, and temporal-knowledge benchmarks across multiple open and commercial backbones.</p>
+        <p class="meta">Paper under review.</p>
+      </li>
 
-        <li class="entry">
-          <span class="label">No. 2</span>
-          <h3>CriterionSI</h3>
-          <p class="sub">Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</p>
-          <p class="meta">First author · IEEE VIS 2026, Short Papers</p>
-          <p class="authors"><strong>Yang Liu</strong>, Xuxin Tang, Jiahao Xu, Chris North</p>
-          <figure class="teaser">
-            <a href="assets/teaser-criterionsi.jpg"><img src="assets/teaser-criterionsi.jpg" alt="CriterionSI pipeline: drag interactions → inferred criterion → value mapping → reprojected layout" width="1400" height="536"></a>
-          </figure>
-          <p class="summary">Users' clustering criterion (e.g., action, location, mood) often emerges gradually through interaction rather than being clear at the outset. CriterionSI (Criterion-guided Semantic Interaction) uses an LLM to infer and refine the user's clustering criterion from sequential drag interactions, grounds it in human feedback rather than fixed priors, and combines the inferred criterion with local drags to guide global reprojection of the image layout. Simulation-based evaluation and a usage scenario show it discovers the target criterion from a small number of interactions and progressively produces criterion-aligned clustering layouts.</p>
-          <ul class="links" role="list">
-            <li><a href="https://arxiv.org/abs/2606.28517">arXiv</a></li>
-            <li><a href="https://github.com/4C79/CriterionSI">Code</a></li>
-          </ul>
-        </li>
+      <li class="entry">
+        <h3>CriterionSI — Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</h3>
+        <p class="meta">First author · IEEE VIS 2026, Short Papers</p>
+        <p class="authors"><strong>Yang Liu</strong>, Xuxin Tang, Jiahao Xu, Chris North</p>
+        <div class="teaser">
+          <img src="assets/teaser-criterionsi.jpg" alt="CriterionSI pipeline: drag interactions → inferred criterion → value mapping → reprojected layout" width="1400" height="536">
+        </div>
+        <p>Users' clustering criterion (e.g., action, location, mood) often emerges gradually through interaction rather than being clear at the outset. CriterionSI (Criterion-guided Semantic Interaction) uses an LLM to infer and refine the user's clustering criterion from sequential drag interactions, grounds it in human feedback rather than fixed priors, and combines the inferred criterion with local drags to guide global reprojection of the image layout. Simulation-based evaluation and a usage scenario show it discovers the target criterion from a small number of interactions and progressively produces criterion-aligned clustering layouts.</p>
+        <p class="links"><a href="https://arxiv.org/abs/2606.28517">arXiv</a> · <a href="https://github.com/4C79/CriterionSI">Code</a></p>
+      </li>
 
-        <li class="entry">
-          <span class="label">No. 3</span>
-          <h3>Summary Verification Space</h3>
-          <p class="sub">Spatial Visual Analytics for Multi-Document Summary Verification</p>
-          <p class="meta">Co-author · IEEE VIS 2026, Full Papers</p>
-          <p class="authors">Jiahao Xu, Wei Liu, <strong>Yang Liu</strong>, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, Chris North</p>
-          <p class="summary">LLMs increasingly summarize collections of documents, but checking whether each summary statement is grounded in the sources is hard when evidence is scattered, incomplete, or conflicting. SVS is a visual analytics system for verifying multi-document summaries through spatial document organization and coordinated provenance visualization, investigating summary-guided and source-guided 2-D canvas layouts for scalable verification.</p>
-          <ul class="links" role="list">
-            <li><a href="https://arxiv.org/abs/2607.28853">arXiv</a></li>
-          </ul>
-        </li>
+      <li class="entry">
+        <h3>Summary Verification Space (SVS) — Spatial Visual Analytics for Multi-Document Summary Verification</h3>
+        <p class="meta">Co-author · IEEE VIS 2026, Full Papers</p>
+        <p class="authors">Jiahao Xu, Wei Liu, <strong>Yang Liu</strong>, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, Chris North</p>
+        <p>LLMs increasingly summarize collections of documents, but checking whether each summary statement is grounded in the sources is hard when evidence is scattered, incomplete, or conflicting. SVS is a visual analytics system for verifying multi-document summaries through spatial document organization and coordinated provenance visualization, investigating summary-guided and source-guided 2-D canvas layouts for scalable verification.</p>
+        <p class="links"><a href="https://arxiv.org/abs/2607.28853">arXiv</a></p>
+      </li>
 
-        <li class="entry">
-          <span class="label">No. 4</span>
-          <h3>CTIConnect</h3>
-          <p class="sub">A Benchmark for Retrieval-Augmented LLMs over Heterogeneous Cyber Threat Intelligence</p>
-          <p class="meta">Second author · KDD 2026, Datasets &amp; Benchmarks Track</p>
-          <p class="authors">Yutong Cheng, <strong>Yang Liu</strong>, Changze Li, Dawn Song, Peng Gao</p>
-          <p class="summary">A benchmark for evaluating retrieval-augmented LLMs across the cyber threat intelligence task landscape: 1,860 expert-verified QA pairs over nine tasks, built on a unified environment that integrates five heterogeneous CTI sources (CVE, CWE, CAPEC, MITRE ATT&amp;CK, and unstructured threat reports). Experiments on ten state-of-the-art LLMs show that the retrieval bottleneck shifts by task and that domain-specific retrieval strategies outperform generic retrieve-then-rerank and IRCoT.</p>
-          <ul class="links" role="list">
-            <li><a href="https://arxiv.org/abs/2510.11974">arXiv</a></li>
-          </ul>
-        </li>
-      </ol>
+      <li class="entry">
+        <h3>CTIConnect — A Benchmark for Retrieval-Augmented LLMs over Heterogeneous Cyber Threat Intelligence</h3>
+        <p class="meta">Second author · KDD 2026, Datasets &amp; Benchmarks Track</p>
+        <p class="authors">Yutong Cheng, <strong>Yang Liu</strong>, Changze Li, Dawn Song, Peng Gao</p>
+        <p>A benchmark for evaluating retrieval-augmented LLMs across the cyber threat intelligence task landscape: 1,860 expert-verified QA pairs over nine tasks, built on a unified environment that integrates five heterogeneous CTI sources (CVE, CWE, CAPEC, MITRE ATT&amp;CK, and unstructured threat reports). Experiments on ten state-of-the-art LLMs show that the retrieval bottleneck shifts by task and that domain-specific retrieval strategies outperform generic retrieve-then-rerank and IRCoT.</p>
+        <p class="links"><a href="https://arxiv.org/abs/2510.11974">arXiv</a></p>
+      </li>
+      </ul>
 
-      <p class="note">Earlier work (2022–2024) is listed under <a href="projects.html">Projects</a>; the full list of papers is under <a href="publications.html">Publications</a>.</p>
+      <p class="meta">Earlier work (2022–2024) is listed under <a href="projects.html">Projects</a>; the full list of papers is under <a href="publications.html">Publications</a>.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 Yang Liu</p>
-    <p>Last updated September 2026</p>
+  <footer>
+    <p>© 2026 Yang Liu · Last updated September 2026</p>
   </footer>
-  </div>
-  <script>(function(){var a=document.querySelector('.site-nav [aria-current]');if(a&&a.scrollIntoView)a.scrollIntoView({block:'nearest',inline:'nearest'});})();</script>
 </body>
 </html>
