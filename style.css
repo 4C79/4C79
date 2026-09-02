@@ -134,18 +134,41 @@ main {
   padding-top: 28px;
 }
 
-/* Identity header on the home page: photo top right, text flows beside it. */
+/* Identity header on the home page: text left, photo in its own column right. */
 
 .head {
-  display: flow-root;
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.head-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .photo {
-  float: right;
+  flex: none;
   width: 120px;
   height: 180px;
-  margin: 4px 0 12px 28px;
   border: 1px solid var(--rule);
+}
+
+/* Descriptions are collapsed; the summary is the button that opens them. */
+
+details {
+  margin-top: 8px;
+}
+
+summary {
+  font-size: 14px;
+  color: var(--muted);
+  cursor: pointer;
+  width: fit-content;
+}
+
+summary:hover {
+  color: var(--link);
 }
 
 /* Entries: a plain list; bold title, gray meta lines, description, gray link row. */
@@ -230,12 +253,14 @@ footer p {
   }
 
   /* Photo above the name, so the role line keeps the full column width. */
+  .head {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
   .photo {
-    float: none;
-    display: block;
     width: 90px;
     height: 135px;
-    margin: 0 0 12px;
   }
 
   dl {
